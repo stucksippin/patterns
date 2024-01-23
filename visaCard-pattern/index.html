@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="containerFirst">
+        <div class="frontSide">
+            <input class="holder" type="text" id="card-owner" placeholder="Holder of card">
+            <input class="number" type="text" id="card-number" placeholder="Number of card">
+
+            <span class="valid">VALID THRU</span>
+
+            <div class="footerCard">
+                <input class="mm" type="text" id="card-month" placeholder="ММ">
+                <span class="slash"> / </span>
+                <input class="yy" type="text" id="card-year" placeholder="YY">
+                <img src="vizza_large (1) 1.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="backSide">
+
+            <div class="rectangles"></div>
+            <div class="cvc-block">
+                <input class="cvc" type="text" id="cvc" placeholder="CVC">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <button onclick="submitData()" class="sendBtn" type="submit">Send</button>
+
+
+
+
+    <table class="table" id="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Card Number</th>
+                <th>Data Expire</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
